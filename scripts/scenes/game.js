@@ -139,14 +139,14 @@ class Game {
     }
 
     gameOver() {
-        image(imageGameOver, width/2 - 200, height/3);
+        image(imageGameOver, width / 2 - 200, height / 3);
         soundtrack.stop();
         soundGameOver.stop();
         soundGameOver.loop();
         gameOver = true;
         noLoop();
 
-        managerButton = new ManagerButton('Restart', width / 2, height / 7 * 5);
+        managerButton = new ManagerButton('Restart', width / 7 * 5, height / 7 * 5);
         managerButton.draw();
     }
 }

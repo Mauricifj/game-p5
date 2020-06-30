@@ -10,7 +10,7 @@ function setup() {
 
     scenes = {game, initial};
 
-    managerButton = new ManagerButton('Start', width /2, height / 2);
+    managerButton = new ManagerButton('Start', width / 7 * 5, height / 7 * 5);
 }
 
 function keyPressed() {

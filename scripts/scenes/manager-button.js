@@ -9,7 +9,6 @@ class ManagerButton {
 
     draw() {
         this.button.position(this.x, this.y);
-        this.button.center('horizontal');
         this.button.addClass('start-button');
         this.button.mousePressed(() => this.changeScene());
     }
