@@ -120,12 +120,6 @@ class Game {
         scenePath.move();
     }
 
-    isArrowUpPressed(key) {
-        if (key === 'ArrowUp' && !gameOver) {
-            character.jump();
-        }
-    }
-
     start() {
         gameOver = false;
         scoreBoard = new ScoreBoard();
@@ -148,5 +142,11 @@ class Game {
 
         managerButton = new ManagerButton('Restart', width / 7 * 5, height / 7 * 5);
         managerButton.draw();
+    }
+}
+
+function touchStarted() {
+    if (!gameOver) {
+        character.jump();
     }
 }

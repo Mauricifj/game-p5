@@ -28,7 +28,7 @@ class InitialScene {
         textFont('Indie Flower');
         textSize(30)
         textAlign(LEFT);
-        text("* Use arrow up to jump", 20, height - 30);
+        text("* Click or touch to jump", 20, height - 30);
     }
 
     _startButton() {
